@@ -5,24 +5,18 @@
 namespace WebNotas.Migrations
 {
     /// <inheritdoc />
-    public partial class AgregarImagenes : Migration
+    public partial class NotasWeb1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<byte[]>(
-                name: "Imagen",
-                table: "Notas",
-                type: "longblob",
-                nullable: false);
+
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Imagen",
-                table: "Notas");
+
         }
     }
 }

@@ -10,8 +10,8 @@ using WebNotas.Models;
 namespace WebNotas.Migrations
 {
     [DbContext(typeof(WebNotasContext))]
-    [Migration("20231106172242_cambiosennotas")]
-    partial class cambiosennotas
+    [Migration("20231106185730_NotasWeb1")]
+    partial class NotasWeb1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

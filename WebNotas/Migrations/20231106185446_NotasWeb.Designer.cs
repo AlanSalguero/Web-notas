@@ -10,8 +10,8 @@ using WebNotas.Models;
 namespace WebNotas.Migrations
 {
     [DbContext(typeof(WebNotasContext))]
-    [Migration("20231030184231_AgregarImagenes")]
-    partial class AgregarImagenes
+    [Migration("20231106185446_NotasWeb")]
+    partial class NotasWeb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,7 +32,6 @@ namespace WebNotas.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<byte[]>("Imagen")
-                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<string>("Titulo")
